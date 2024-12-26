@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+<body>
+    
+    
+    <H1>  WEATHER FORECAST  <img src="logos.png"  width="100" height="auto"></H1>
+    
+
+    <div class="container-fluid" >
+
+          <div class="row">
+
+           <!-- City 1: CHENNAI -->
+            <div class="custom-container custom-col custom-mb text-center" >
+                <div class="cards">
+                    <h5>CHENNAI❄🌥 </h5>
+                    <button class="btn btn-primary" onclick="getWeather('Chennai')">GetWeather</button>
+
+                    <div class="weather-result" id="Chennai-result"></div>
+                </div>
+            </div>
+
+
+            <!-- City 2: MUMBAI -->
+            <div class="custom-container custom-col custom-mb text-center " >
+                <div class="cards">
+                    <h5>MUMBAI❄🌥</h5>
+                    
+                    <button class="btn btn-primary" onclick="getWeather('Mumbai')">Get Weather</button>
+                    <div class="weather-result" id="Mumbai-result"></div>
+                </div>
+            </div>
+
+
+            <!-- City 3: KOLKATA -->
+            <div class= "custom-container custom-col custom-mb text-center">
+                <div class="cards">
+                    <h5>KOLKATA❄🌥</h5>
+                    <button class="btn btn-primary" onclick="getWeather('Kolkata')">Get Weather</button>
+                    <div class="weather-result" id="Kolkata-result"></div>
+                </div>
+            </div>
+
+            <!-- City 4: BENGALURU -->
+            <div class="custom-container custom-col custom-mb text-center" >
+                <div class="cards">
+                    <h5>BENGALURU❄🌥</h5>
+                    <button class="btn btn-primary" onclick="getWeather('Bengaluru')">GetWeather</button>
+                    <div class="weather-result" id="Bengaluru-result"></div>
+                </div>
+            </div>
+
+            <!-- City 5: PUNE -->
+             <div class="custom-container custom-col custom-mb text-center" >
+                <div class="cards">
+                    <h5>PUNE❄🌥</h5>
+                    <button class="btn btn-primary" onclick="getWeather('Pune')">GetWeather</button>
+                    <div class="weather-result" id="Pune-result"></div>
+                </div>
+            </div>
+
+
+             <!-- City 6: AHMEDABAD -->
+             <div class=" custom-container custom-col custom-mb text-center " >
+                <div class="cards">
+                    <h5>AHMEDABAD❄🌥</h5>
+                    <button class="btn btn-primary" onclick="getWeather('Ahmedabad')">GetWeather</button>
+                    <div class="weather-result" id="Ahmedabad-result"></div>
+                </div>
+            </div>
+
+
+            <!-- City 7: HYDERABAD -->
+            <div class="custom-container custom-col custom-mb text-center " >
+                <div class="cards">
+                    <h5>HYDERABAD❄🌥</h5>
+                    <button class="btn btn-primary" onclick="getWeather('Hyderabad')">GetWeather</button>
+                    <div class="weather-result" id="Hyderabad-result"></div>
+                </div>
+            </div>
+
+
+        <!-- City 8: PATNA -->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>PATNA❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Patna')">GetWeather</button>
+            <div class="weather-result" id="Patna-result"></div>
+        </div>
+    </div>
+
+    <!-- City 9: AMARAVATI-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5 >AMARAVATI❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Amaravati')">GetWeather</button>
+            <div class="weather-result " id="Amaravati-result"></div>
+        </div>
+    </div>
+
+    <!-- City 10: THIRUVANANTHAPURAM-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>THIRUVANANTHAPURAM❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Thiruvananthapuram')">GetWeather</button>
+            <div class="weather-result" id="Thiruvananthapuram-result"></div>
+        </div>
+    </div>
+
+    <!-- City 11: LUCKNOW-->
+    <div class="container text-center">
+        <div class="cards">
+            <h5>LUCKNOW❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Lucknow')">GetWeather</button>
+            <div class="weather-result" id="Lucknow-result"></div>
+        </div>
+    </div>
+
+    <!-- City 12: JAIPUR-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>JAIPUR❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Jaipur')">GetWeather</button>
+            <div class="weather-result" id="Jaipur-result"></div>
+        </div>
+    </div>
+
+                 <!-- City 13: JAMMU-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>JAMMU❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Jammu')">GetWeather</button>
+            <div class="weather-result" id="Jammu-result"></div>
+        </div>
+    </div>
+
+    <!-- City 14: RISHIKESH-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>RISHIKESH❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Rishikesh')">GetWeather</button>
+            <div class="weather-result" id="Rishikesh-result"></div>
+        </div>
+    </div>
+
+    <!-- City 15: DARJEELING-->
+    <div class="custom-container custom-col custom-mb text-center " >
+        <div class="cards">
+            <h5>DARJEELING❄🌥</h5>
+            <button class="btn btn-primary" onclick="getWeather('Darjeeling')">GetWeather</button>
+            <div class="weather-result" id="Darjeeling-result"></div>
+        </div>
+    </div>
+
+    
+
+        
+    
+</div>
+</div>
+
+
+<Script>
+
+function getWeather(city) {
+    const apikey = 'e09960f33589cfadeb753a253ce08984';
+    const Url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+
+    fetch(Url)
+        .then(response => response.json())
+        .then(data => {
+            const temp = data.main.temp;
+            const resultElement = document.getElementById(`${city}-result`);
+
+            resultElement.innerHTML = `
+                <div class="weather-details">
+                    Temperature: ${temp}°C <br>
+                    <button class="btn btn-secondary more-info-btn" onclick="getMoreWeatherDetails('${city}', ${data.coord.lat}, ${data.coord.lon}, ${temp})">Show More Details🔁</button>
+                </div>`;
+
+        
+            const weatherDetails = resultElement.querySelector('.weather-details');
+            weatherDetails.classList.remove('fade-in'); 
+            void weatherDetails.offsetWidth;
+            weatherDetails.classList.add('fade-in'); 
+        })
+        .catch(error => {
+            console.error("Error fetching weather data:", error);
+            const resultElement = document.getElementById(`${city}-result`);
+            resultElement.innerHTML = "Error fetching weather data.";
+        });
+}
+
+function getMoreWeatherDetails(city, lat, lon, temp) {
+    const apikey = 'e09960f33589cfadeb753a253ce08984';
+    const airQualityUrl = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
+
+    fetch(weatherUrl)
+        .then(response => response.json())
+        .then(data => {
+            const rain = data.rain ? data.rain["3h"] : 0; 
+            const weatherDescription = data.weather[0].description;
+            let rainInfo;
+
+            if (rain > 30) {
+                rainInfo = "Heavy raining";
+            } else if (rain > 10) {
+                rainInfo = "Moderate raining";
+            } else if (rain > 2) {
+                rainInfo = "Slightly raining";
+            } else if (rain > 0) {
+                rainInfo = "Rain will start soon";
+            } else {
+                rainInfo = weatherDescription.includes('rain') ? "Rain expected" : "Clear weather";
+            }
+
+            fetch(airQualityUrl)
+                .then(response => response.json())
+                .then(airData => {
+                    const aqi = airData.list[0].main.aqi;
+                    const aqiDescription = getAQIDescription(aqi);
+
+                    const resultElement = document.getElementById(`${city}-result`);
+                    resultElement.innerHTML += `
+                        <div class="more-weather-details">
+                            Past 3Hrs Rain Status: ${rainInfo} (${rain}mm) <br>
+                            Air Quality Index: ${aqi} (${aqiDescription})
+                        </div>`;
+
+                    const moreWeatherDetails = resultElement.querySelector('.more-weather-details');
+                    moreWeatherDetails.classList.remove('fade-in'); 
+                    void moreWeatherDetails.offsetWidth; 
+                    moreWeatherDetails.classList.add('fade-in'); 
+                })
+                .catch(error => {
+                    console.error("Error fetching air quality data:", error);
+                    const resultElement = document.getElementById(`${city}-result`);
+                    resultElement.innerHTML += `
+                        <div class="more-weather-details">
+                            Temperature: ${temp}°C <br>
+                            Past 3Hrs Rain Status: ${rainInfo} (${rain}mm) <br>
+                            Error fetching air quality data.
+                        </div>`;
+                });
+        })
+        .catch(error => {
+            console.error("Error fetching weather details:", error);
+            const resultElement = document.getElementById(`${city}-result`);
+            resultElement.innerHTML += "<div class='more-weather-details'>Error fetching detailed weather data.</div>";
+        });
+}
+
+function getAQIDescription(aqi) {
+    switch (aqi) {
+        case 1:
+            return "Good😇👍";
+        case 2:
+            return "Fair😊";
+        case 3:
+            return "Moderate🙂";
+        case 4:
+            return "Poor 😷";
+        case 5:
+            return "Very Poor😷🌫️";
+        default:
+            return "Unknown";
+    }
+}
+
+
+</Script>
+
+<link rel="stylesheet" href="styles.css">
+</body>
+</html>
