@@ -60,9 +60,9 @@ h1 {
     padding-top: 20px;
   }
 
+
 .custom-row
 {
-  .custom-row {
   width: 100%; 
   display: flex;
   flex-wrap: wrap; 
@@ -73,7 +73,7 @@ h1 {
   padding-right: 15px;
   box-sizing: border-box; 
 }
-}
+
 
 
   
