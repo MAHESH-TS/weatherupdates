@@ -67,6 +67,7 @@ h1 {
   }
 .custom-row
 {
+  width: calc(33.333% - 1rem); 
   
   display: flex;
   flex-wrap: wrap; /
