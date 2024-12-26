@@ -69,7 +69,6 @@ h1 {
   flex-wrap: wrap; /* Allows wrapping of containers to new lines */
   justify-content: space-between; /* Distribute space between containers */
   margin: 0 auto;
-  max-width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
