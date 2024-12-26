@@ -29,7 +29,8 @@ body{
 
 .container
 {
-     width: calc(33.333% - 1rem); 
+    
+  width: calc(33.333% - 1rem); 
   margin: 0.5rem;
   box-sizing: border-box; 
   }
@@ -59,41 +60,23 @@ h1 {
     padding-top: 20px;
   }
 
-    
-.custom-container {
-    width: calc(33.333% - 1rem); 
-  margin: 0.5rem;
-  box-sizing: border-box; 
-  }
 .custom-row
 {
-  width: calc(33.333% - 1rem); 
-  
+  .custom-row {
+  width: 100%; 
   display: flex;
-  flex-wrap: wrap; /
+  flex-wrap: wrap; 
   justify-content: space-between; 
   margin: 0 auto;
   max-width: 1140px;
   padding-left: 15px;
   padding-right: 15px;
-
+  box-sizing: border-box; 
+}
 }
 
-  
-  .custom-cols
-   {
-    width: calc(33.333% - 1rem); 
-    margin-right: 0.5rem; 
-    margin-left: 0.5rem; 
-    margin-bottom: 1rem; 
-    box-sizing: border-box; 
-   }
-
 
   
-  .custom-mb {
-    margin-bottom: 1.5rem; 
-  }
   
   .text-center {
     text-align: center;
