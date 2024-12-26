@@ -29,7 +29,7 @@ body{
 
 .container
 {
-    width: 33.3%;
+    width: 100%;
     max-width: 400px;
     min-width: 300px;
     margin: 0 auto;
