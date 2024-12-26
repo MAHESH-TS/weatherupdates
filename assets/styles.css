@@ -77,11 +77,12 @@ h1 {
     box-sizing: border-box; 
    }
 
-.custom-row {
+.container-wrapper {
   display: flex;
-  flex-wrap: wrap; 
-  
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
   
   .custom-mb {
     margin-bottom: 1.5rem; 
