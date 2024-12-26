@@ -61,7 +61,7 @@ h1 {
 
     
 .custom-container {
-    width: 33.3%; 
+    width: 100%; 
     max-width: 1140px; 
     margin: 0 auto; 
     padding-left: 15px;
@@ -77,11 +77,6 @@ h1 {
     box-sizing: border-box; 
    }
 
-.container-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
   
   .custom-mb {
